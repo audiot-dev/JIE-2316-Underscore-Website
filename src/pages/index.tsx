@@ -1,18 +1,22 @@
-import styles from "../styles/Home.module.css"
-import Switch from "@mui/material/Switch"
-
-const label = {inputProps: {"aria-label": "Switch Demo"}}
+import Head from "next/head";
+import { useAnalytics } from "../utils/analytics";
+import Header from "../components/nav/Header"
 
 export default function Home() {
-  
+
+	useAnalytics("/")
+
 	return (
-		<div className={styles.container}>
+		<>
+			<Head>
+				<title>AudioT</title>		
+			</Head>
 			<div>
-				<span>With default theme:</span>
+				<Header />
+				<div>
+					main section
+				</div>
 			</div>
-			<Switch {...label} defaultChecked />
-			<Switch {...label} />
-			<Switch {...label} disabled defaultChecked />
-		</div>
+		</>
 	)
 }

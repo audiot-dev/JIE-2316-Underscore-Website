@@ -1,0 +1,6 @@
+
+.root {
+    display: grid;
+    min-height: 100vh;
+    grid-template: auto 1fr / 1fr;
+}
