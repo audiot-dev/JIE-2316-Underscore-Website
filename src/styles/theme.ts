@@ -5,14 +5,14 @@ declare module "@mui/material/styles" {
     interface Palette {
         secondaryBg?: {
             header?: string;
-            green?: string;
+            lightGray?: string;
         };
     }
 
     interface PaletteOptions {
         secondaryBg?: {
             header?: string;
-            green?: string;
+            lightGray?: string;
         };
     }
 }
@@ -21,30 +21,22 @@ export const theme = createTheme({
     palette: {
         mode: "light",
         primary: {
-            main: "#ba8d69",
-            dark: "#a8764d"
+            main: "#ED962B"
         },
-        error: {
-            main: "#FF2414"
+        secondary: {
+            main: "#213159"
         },
         text: {
-            primary: "#535040",
-            secondary: "#F1F0E2"
+            primary: "#213159",
+            secondary: "#fff"
         },
         background: {
-            default: "#F1F0E2",
-            paper: "#E7E7E7"
+            default: "#F2F5FA",
+            paper: "#fff"
         },
         secondaryBg: {
-            header: "#535040",
-            green: "#7E8772"
-        } 
-    },
-    components: {
-        MuiTextField: {
-            defaultProps: {
-                variant: "standard",
-            }
-        },
+            header: "#fff",
+            lightGray: "#D9D9D9"
+        }
     }
 })
