@@ -7,12 +7,12 @@ export default function AdminHeader() {
             <AppBar position="static" sx={{backgroundColor: "secondaryBg.header"}}>
                 <Toolbar sx={{alignItems: "end", flexWrap: "wrap"}}>
                     <Grid item>
-                        <Typography variant="h4" color="text.secondary">
+                        <Typography variant="h4" color="text.primary">
                             AudioT
                         </Typography>
                     </Grid>
                     <Grid item>
-                        <Typography variant="body1" color="text.secondary" 
+                        <Typography variant="body1" color="text.primary" 
                             sx={{pb: "3px", whiteSpace: "nowrap"}}>
                             Admin Portal
                         </Typography>

@@ -25,12 +25,12 @@ export default function AdminHeader() {
                         <Box py={2}>
                             <Grid container alignItems="start" direction="column">
                                 <Grid item>
-                                    <Typography variant="h4" color="text.secondary">
+                                    <Typography variant="h4" color="text.primary">
                                         AudioT
                                     </Typography>
                                 </Grid>
                                 <Grid item>
-                                    <Typography variant="body1" color="text.secondary">
+                                    <Typography variant="body1" color="text.primary">
                                         Admin Portal
                                     </Typography>
                                 </Grid>
@@ -39,7 +39,7 @@ export default function AdminHeader() {
                     </Grid>
                     <Grid item>
                         <IconButton onClick={() => setDrawerIsOpen(!drawerIsOpen)}>
-                            <MenuIcon fontSize="large" sx={{color: "text.secondary"}} />
+                            <MenuIcon fontSize="large" sx={{color: "text.primary"}} />
                         </IconButton>
                     </Grid>
                 </Toolbar>
@@ -50,7 +50,7 @@ export default function AdminHeader() {
                 <Box height="100%" bgcolor="secondaryBg.green" minWidth={250}>
                     {sections.map(section => (
                         <Box key={section.name} my={2} ml={3}>
-                            <Typography variant="h5" color="text.secondary">
+                            <Typography variant="h5" color="text.primary">
                                 <Link href={section.link}>
                                     {section.name}
                                 </Link>
@@ -58,7 +58,7 @@ export default function AdminHeader() {
                         </Box>
                     ))}
                     <Box my={4} ml={3}>
-                        <Typography variant="h5" color="text.secondary"
+                        <Typography variant="h5" color="text.primary"
                             sx={{cursor: "pointer"}}>
                             Logout
                         </Typography>
