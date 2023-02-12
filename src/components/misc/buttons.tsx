@@ -28,6 +28,19 @@ export const RedOrangePrimaryButton = styled(Button)(({theme}) => ({
         ${theme.palette.primary.main}, #F04B4C)`,
     color: theme.palette.text.secondary,
     borderRadius: theme.spacing(1),
+    padding: `${theme.spacing(2)} ${theme.spacing(3)}`,
+    transition: "background 300ms",
+    "&:hover": {
+        background: `linear-gradient(to bottom, 
+            ${theme.palette.primary.main}, ${theme.palette.primary.main})`,
+    }
+}))
+
+export const RedOrangePrimaryDenseButton = styled(Button)(({theme}) => ({
+    background: `linear-gradient(to bottom, 
+        ${theme.palette.primary.main}, #F04B4C)`,
+    color: theme.palette.text.secondary,
+    borderRadius: theme.spacing(1),
     padding: `${theme.spacing(1)} ${theme.spacing(3)}`,
     transition: "background 300ms",
     "&:hover": {

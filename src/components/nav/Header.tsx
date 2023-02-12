@@ -1,7 +1,7 @@
 import { AppBar, Box, Grid, Toolbar, Typography, IconButton, useMediaQuery,
   Drawer, } from "@mui/material";
 import Link from "next/link";
-import { OrangePrimaryButton, RedOrangePrimaryButton } from "../misc/buttons";
+import { OrangePrimaryButton, RedOrangePrimaryButton, RedOrangePrimaryDenseButton } from "../misc/buttons";
 
 
 
@@ -43,9 +43,9 @@ export default function Header() {
               </Grid>
               <Grid item mx={3} my={1}>
                 <Link href="/contact-us">
-                  <RedOrangePrimaryButton>
+                  <RedOrangePrimaryDenseButton>
                     Contact Us
-                  </RedOrangePrimaryButton>
+                  </RedOrangePrimaryDenseButton>
                 </Link>
               </Grid>
             </Grid>
