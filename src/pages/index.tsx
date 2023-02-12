@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useAnalytics } from "../utils/analytics";
 import Header from "../components/nav/Header"
+import Main from "../components/home/Main"
 
 export default function Home() {
 
@@ -13,9 +14,7 @@ export default function Home() {
 			</Head>
 			<div>
 				<Header />
-				<div>
-					main section
-				</div>
+				<Main />
 			</div>
 		</>
 	)

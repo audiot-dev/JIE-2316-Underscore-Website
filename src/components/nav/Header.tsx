@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     
-    <Box mb={3}>
+    <Box>
       <AppBar position="static" sx={{backgroundColor: "secondaryBg.header"}}>
           <Toolbar>
             <Grid container spacing={0} alignItems="center" direction="row">
