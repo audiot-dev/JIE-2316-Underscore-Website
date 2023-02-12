@@ -1,11 +1,16 @@
 import { Box, Grid, Typography } from "@mui/material";
 import BirdDevUnit from "./BirdDevUnit";
+import MicIcon from '@mui/icons-material/Mic';
 
 export default function BirdDev() {
 
     return (
         <Box bgcolor="background.default" my={12} pt={12} mx={6}>
-            <Box>
+            <Box position="relative">
+                <Box position="absolute" top={50} left={-30} width={5} 
+                    bgcolor="primary.main" height="100%" />
+                <Box position="absolute" top={50} left={-30} width={35}
+                    height={5} bgcolor="primary.main" />
                 <Grid container spacing={3}>
                     <Grid item md={6} xs={12}>
                         <Box>
