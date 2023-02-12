@@ -6,7 +6,7 @@ export default function ProblemIntro() {
         <Box bgcolor="secondary.main" px={3} pb={12}>
             <Box pt={12} mb={3} mx="auto" maxWidth={1000} textAlign="center">
                 <Typography color="primary.main" variant="h3">
-                    Current poultry welfare monitoring doesn't tell
+                    Current poultry welfare monitoring doesn&#39;t tell
                     the whole story.
                 </Typography>
             </Box>
