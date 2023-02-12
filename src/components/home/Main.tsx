@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import FirstBanner from "./FirstBanner";
+import Hardware from "./Hardware";
 import ProblemIntro from "./ProblemIntro";
 
 export default function Main() {
@@ -8,6 +9,7 @@ export default function Main() {
         <Box>
             <FirstBanner />
             <ProblemIntro />
+            <Hardware />
         </Box>
     )
 }
