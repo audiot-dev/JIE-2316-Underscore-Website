@@ -30,7 +30,12 @@ export default function BirdDev() {
             </Box>
             <Box mt={12}>
                 <BirdDevUnit name="Chick" birdImg="/small-chicken.png" 
-                    videoLink="https://www.youtube.com/embed/70IqKloH-mw" audios={[]} />
+                    videoLink="https://www.youtube.com/embed/70IqKloH-mw" 
+                    audios={Array(3).fill({
+                        img: '/dummy-spectogram.png',
+                        audio: '/chicken-alarm.mp3',
+                        name: 'Test'
+                    })} />
             </Box>
         </Box>
     )
