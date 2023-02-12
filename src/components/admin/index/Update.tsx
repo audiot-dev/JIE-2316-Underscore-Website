@@ -1,7 +1,7 @@
 import { Box, Grid, Typography } from "@mui/material";
 import dayjs, { Dayjs } from "dayjs";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { BeigePrimaryDenseButton } from "../../misc/buttons";
+import { OrangePrimaryDenseButton } from "../../misc/buttons";
 
 interface Props {
     onClick: () => void;
@@ -30,9 +30,9 @@ export default function Update({onClick, lastUpdated}:Props) {
         <Box>
             <Grid container spacing={3} alignItems="center">
                 <Grid item>
-                    <BeigePrimaryDenseButton onClick={() => onClick()}>
+                    <OrangePrimaryDenseButton onClick={() => onClick()}>
                         Update
-                    </BeigePrimaryDenseButton>
+                    </OrangePrimaryDenseButton>
                 </Grid>
                 <Grid item>
                     <Typography variant="body1">

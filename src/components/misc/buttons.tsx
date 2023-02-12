@@ -1,7 +1,7 @@
 import { Button } from "@mui/material"
 import { styled } from "@mui/material/styles"
 
-export const BeigePrimaryButton = styled(Button)(({theme}) => ({
+export const OrangePrimaryButton = styled(Button)(({theme}) => ({
     background: theme.palette.primary.main,
     color: theme.palette.text.secondary,
     borderRadius: theme.spacing(1),
@@ -12,7 +12,7 @@ export const BeigePrimaryButton = styled(Button)(({theme}) => ({
     }
 }))
 
-export const BeigePrimaryDenseButton = styled(Button)(({theme}) => ({
+export const OrangePrimaryDenseButton = styled(Button)(({theme}) => ({
     background: theme.palette.primary.main,
     color: theme.palette.text.secondary,
     borderRadius: theme.spacing(1),

@@ -3,7 +3,7 @@ import { Box, FormGroup } from "@mui/material";
 import { object, string } from "yup"
 import FormikTextField from "../../formik/TextField"
 import FormikPasswordField from "../../formik/PasswordField";
-import { BeigePrimaryButton } from "../../misc/buttons"
+import { OrangePrimaryButton } from "../../misc/buttons"
 import axios, { AxiosError } from "axios";
 import Router from "next/router"
 
@@ -59,10 +59,10 @@ export default function LoginForm() {
                             </FormGroup>
                         </Box>
                         <Box my={3} maxWidth={200} mx="auto" textAlign="center">
-                            <BeigePrimaryButton fullWidth type="submit" 
+                            <OrangePrimaryButton fullWidth type="submit" 
                                 disabled={isSubmitting || isValidating}>
                                 Login
-                            </BeigePrimaryButton>
+                            </OrangePrimaryButton>
                         </Box>
                     </Form> 
                 )}
