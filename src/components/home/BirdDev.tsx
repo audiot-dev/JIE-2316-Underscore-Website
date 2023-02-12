@@ -8,8 +8,8 @@ export default function BirdDev() {
         <Box bgcolor="background.default" my={12} pt={12} mx={6}>
             <Box position="relative">
                 <Box position="absolute" top={50} left={-30} width={5} 
-                    bgcolor="primary.main" height="100%" />
-                <Box position="absolute" top={50} left={-30} width={35}
+                    bgcolor="primary.main" height="calc(100% + 50px)" />
+                <Box position="absolute" top={48} left={-30} width={35}
                     height={5} bgcolor="primary.main" />
                 <Grid container spacing={3}>
                     <Grid item md={6} xs={12}>
@@ -33,14 +33,36 @@ export default function BirdDev() {
                     </Grid>
                 </Grid>
             </Box>
-            <Box mt={12}>
-                <BirdDevUnit name="Chick" birdImg="/small-chicken.png" 
-                    videoLink="https://www.youtube.com/embed/70IqKloH-mw" 
-                    audios={Array(3).fill({
-                        img: '/dummy-spectogram.png',
-                        audio: '/chicken-alarm.mp3',
-                        name: 'Test'
-                    })} />
+            <Box position="relative">
+                <Box position="absolute" left={-30} width={5} 
+                bgcolor="primary.main" height="100%" />
+                <Box mt={12}>
+                    <BirdDevUnit name="Chick" birdImg="/small-chicken.png" 
+                        videoLink="https://www.youtube.com/embed/70IqKloH-mw" 
+                        audios={Array(3).fill({
+                            img: '/dummy-spectogram.png',
+                            audio: '/chicken-alarm.mp3',
+                            name: 'Test'
+                        })} />
+                </Box>
+                <Box mt={12}>
+                    <BirdDevUnit name="Growing Chicken" birdImg="/medium-chicken.png" 
+                        videoLink="https://www.youtube.com/embed/70IqKloH-mw" 
+                        audios={Array(3).fill({
+                            img: '/dummy-spectogram.png',
+                            audio: '/chicken-alarm.mp3',
+                            name: 'Test'
+                        })} />
+                </Box>
+                <Box mt={12}>
+                    <BirdDevUnit name="Adult Chicken" birdImg="/large-chicken.png" 
+                        videoLink="https://www.youtube.com/embed/70IqKloH-mw" 
+                        audios={Array(3).fill({
+                            img: '/dummy-spectogram.png',
+                            audio: '/chicken-alarm.mp3',
+                            name: 'Test'
+                        })} />
+                </Box>
             </Box>
         </Box>
     )

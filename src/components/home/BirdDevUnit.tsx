@@ -1,6 +1,7 @@
 import { Box, Grid, Paper, Typography, useRadioGroup } from "@mui/material";
 import { useRef, useState } from "react";
 import { RedOrangePrimaryDenseButton } from "../misc/buttons";
+import MicIcon from '@mui/icons-material/Mic';
 
 interface Props {
     name: string;
@@ -78,9 +79,16 @@ export default function BirdDevUnit({name, birdImg, videoLink,
     audios}:Props) {
     
     return (
-        <Box>
-            <Box mb={2}>
-                <Typography variant="h4">
+        <Box position="relative">
+            <Box mb={2} ml={6} position="relative">
+                <Box position="absolute" left={-75} width={35} top="50%"
+                sx={{transform: 'translate(0, -50%)'}}
+                height={5} bgcolor="primary.main" />
+                <Box position="absolute" color="primary.main" left={-55} top="55%"
+                sx={{transform: 'translate(0, -50%)'}}>
+                    <MicIcon sx={{transform: 'rotate(90deg)', fontSize: 50}} />
+                </Box>
+                <Typography variant="h4" color="primary.main">
                     {name}
                 </Typography>
             </Box>
