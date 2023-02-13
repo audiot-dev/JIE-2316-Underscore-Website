@@ -1,7 +1,7 @@
 import { AppBar, Box, Grid, Toolbar, Typography, IconButton, useMediaQuery,
   Drawer, } from "@mui/material";
 import Link from "next/link";
-import { OrangePrimaryButton } from "../misc/buttons";
+import { OrangePrimaryButton, RedOrangePrimaryButton, RedOrangePrimaryDenseButton } from "../misc/buttons";
 
 
 
@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     
-    <Box mb={3}>
+    <Box>
       <AppBar position="static" sx={{backgroundColor: "secondaryBg.header"}}>
           <Toolbar>
             <Grid container spacing={0} alignItems="center" direction="row">
@@ -43,9 +43,9 @@ export default function Header() {
               </Grid>
               <Grid item mx={3} my={1}>
                 <Link href="/contact-us">
-                  <OrangePrimaryButton>
+                  <RedOrangePrimaryDenseButton>
                     Contact Us
-                  </OrangePrimaryButton>
+                  </RedOrangePrimaryDenseButton>
                 </Link>
               </Grid>
             </Grid>
