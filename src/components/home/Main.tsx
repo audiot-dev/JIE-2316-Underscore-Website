@@ -1,4 +1,5 @@
 import { Box } from "@mui/material";
+import Advantages from "./Advantages";
 import BirdDev from "./BirdDev";
 import FirstBanner from "./FirstBanner";
 import Hardware from "./Hardware";
@@ -12,6 +13,7 @@ export default function Main() {
             <ProblemIntro />
             <Hardware />
             <BirdDev />
+            <Advantages />
         </Box>
     )
 }
