@@ -1,4 +1,4 @@
-import { Box, Grid, Paper, Typography, useTheme } from "@mui/material";
+import { Box, Container, Grid, Paper, Typography, useTheme } from "@mui/material";
 import { useState } from "react";
 import { theme } from "../../styles/theme";
 
@@ -73,6 +73,80 @@ export default function Advantages() {
                         </Box>
                     </Grid>
                 </Grid>
+            </Box>
+            <Box mb={6}>
+                <Container maxWidth="lg">
+                    <Grid container spacing={6}>
+                        <Grid item xs={12} md={6}>
+                            <Paper elevation={3}>
+                                <Box p={3}>
+                                    {optionSelected === 0 ? <>
+                                        <Box my={2}>
+                                            <Typography variant="h6">
+                                                Anomaly Detection is the process of searching for changes in chicken vocalizations
+                                                over time that are different than expected.
+                                            </Typography>
+                                        </Box>
+                                        <Box my={2}>
+                                            <Typography variant="h6">
+                                                If notable anomalies occur, farmers will receive an alert allowing them 
+                                                to respond quickly.
+                                            </Typography>
+                                        </Box>
+                                        <Box my={2}>
+                                            <Typography variant="h6">
+                                                Darkness of squares indicates how unusual events were at a certain period of time
+                                                in a certain zone of the house.
+                                            </Typography>
+                                        </Box>
+                                    </> : optionSelected === 1 ? <>
+                                        <Box my={2}>
+                                            <Typography variant="h6">
+                                                Zones allow farmers to pin-point where specific issues are in the 
+                                                house.
+                                            </Typography>
+                                        </Box>
+                                        <Box my={2}>
+                                            <Typography variant="h6">
+                                                They can also help farmers understand where an problem in the house 
+                                                originated from, such as a disease entering the house.
+                                            </Typography>
+                                        </Box>
+                                    </> : <>
+                                        <Box my={2}>
+                                            <Typography variant="h6">
+                                                At each stage in the chicken&#39;s quick development,
+                                                chickens will be expected to make different sounds for 
+                                                different periods of time.
+                                            </Typography>
+                                        </Box>
+                                        <Box my={2}>
+                                            <Typography variant="h6">
+                                                With this understanding, AudioT can compare actual sounds of the 
+                                                chickens with predicted sounds for their stage of development.
+                                            </Typography>
+                                        </Box>
+                                        <Box my={2}>
+                                            <Typography variant="h6">
+                                                If something appears unusual, AudioT can alert the farmer.
+                                            </Typography>
+                                        </Box>
+                                    </>}
+                                </Box>
+                            </Paper>
+                        </Grid>
+                        <Grid item sx={{maxWidth: 450}} flex={1}>
+                            <Box>
+                                <img src={optionSelected === 0 ? 
+                                    "/chicken-anomalies.png" : optionSelected === 1 ?
+                                    "/chicken-zones.png" : "/chicken-tracking-outcomes.png"}
+                                    style={{aspectRatio: optionSelected === 0 ? '1/1' : 
+                                        optionSelected === 1 ? '3/2' : '3/1', 
+                                        width: '100%', height: 'auto'}} />
+                            </Box>
+                        </Grid>
+                    </Grid>     
+                </Container>
             </Box>
         </Box>
     )
