@@ -14,7 +14,7 @@ export default function Header() {
           <Toolbar>
             <Grid container spacing={0} alignItems="center" direction="row">
               <Grid item>
-                <Typography variant="h4" color="orange">
+                <Typography variant="h4" color="#f57c00">
                     <Link href="/" >audioT</Link>
                   </Typography>
                 

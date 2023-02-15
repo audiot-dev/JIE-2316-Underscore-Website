@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useAnalytics } from "../utils/analytics";
-import Header from "../components/nav/Header"
+import Header from "../components/nav/Header";
+import Composite from "../components/missionPage/Composite"
 
 export default function AboutUs() {
 
@@ -13,8 +14,11 @@ export default function AboutUs() {
             </Head> 
             <div>
                 <Header />
+                <Composite />
+                
                 <div>
                     Our Mission page
+            
                 </div>
             </div>
         </>
