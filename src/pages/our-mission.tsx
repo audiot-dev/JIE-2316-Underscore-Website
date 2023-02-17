@@ -15,11 +15,6 @@ export default function AboutUs() {
             <div>
                 <Header />
                 <Composite />
-                
-                <div>
-                    Our Mission page
-            
-                </div>
             </div>
         </>
     )
