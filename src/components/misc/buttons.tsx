@@ -48,3 +48,10 @@ export const RedOrangePrimaryDenseButton = styled(Button)(({theme}) => ({
             ${theme.palette.primary.main}, ${theme.palette.primary.main})`,
     }
 }))
+
+export const RedOrangeLargeIconButton = styled(Button)(({theme}) => ({
+    background: `linear-gradient(to bottom, 
+        ${theme.palette.primary.main}, #F04B4C)`,
+        padding: 20,
+    color: '#fff'
+}))
