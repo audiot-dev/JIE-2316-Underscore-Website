@@ -11,7 +11,7 @@ export default function SecondSection() {
     const xlScreen =  useMediaQuery(theme.breakpoints.down('xl'))
 
     return (
-        <Box pt={12} pb={6} sx={{ background:`linear-gradient(to bottom,#F2F5FA,#9e9e9e)`,backgroundPosition: 'center', backgroundRepeat: 'no-repeat',backgroundSize: 'cover',position: 'relative'}}>
+        <Box pt={0} pb={6} sx={{ background:`linear-gradient(to bottom,#F2F5FA,#9e9e9e)`,backgroundPosition: 'center', backgroundRepeat: 'no-repeat',backgroundSize: 'cover',position: 'relative'}}>
             <Box my={12} mx={6}>
                 <Grid container spacing={3}>
                     <Grid item md={6} xs={12}>

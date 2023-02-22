@@ -7,8 +7,8 @@ export default function FirstSection() {
     const medScreen = useMediaQuery(theme.breakpoints.down('lg'))
 
     return (
-        <Box sx={{ backgroundImage: 'url(/missionpageImage.png)',height: 900,backgroundPosition: 'center', backgroundRepeat: 'no-repeat',backgroundSize: 'cover',position: 'relative'}}>
-             <Box textAlign="left" bgcolor="rgba(255,255,255,.50)" px={10} py={10} mt={smallScreen? "610px":"560px"} position="absolute" width="100%" >
+        <Box sx={{ backgroundImage: 'url(/missionpageImage.png)',height: 800,backgroundPosition: 'center', backgroundRepeat: 'no-repeat',backgroundSize: 'cover',position: 'relative'}}>
+             <Box textAlign="left" bgcolor="rgba(255,255,255,.50)" px={10} py={smallScreen? 10:5} mt={smallScreen? "410px": medScreen? "530px":"510px"} position="absolute" width="100%" >
                 <Typography py={0} sx={{ fontWeight: 'bold', letterSpacing: 1 }} variant={smallScreen ? 'h3' : 'h1'} color="secondary.main">
                     Our Mission
                 </Typography>
