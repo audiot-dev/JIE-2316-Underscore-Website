@@ -44,7 +44,7 @@ export default function Header() {
               <Grid item mx={3}>
                 <Box  sx={{ width:'50', height:'3', p: 2 }} borderRadius={3}>
                   <Typography variant="body1" color="text.primary">
-                    <Link href="/">Technology</Link>
+                    <Link href="/technology">Technology</Link>
                   </Typography>
                 </Box>
               </Grid>
