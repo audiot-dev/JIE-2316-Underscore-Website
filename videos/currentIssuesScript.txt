@@ -1,1 +1,19 @@
+Current Poultry Monitoring doesn’t tell the whole story
 
+Current methods of poultry monitoring only account for environmental factors
+Such as CO2 levels
+And temperature
+However it doesn't account for the poultry’s welfare outcome 
+
+Also it is common to utilize human auditors to check welfare outcomes editors
+But this method only gives a snapshot of the health of a few chickens 
+Out of many
+However the way to address this issue is through evidence based animal welfare
+
+Out of all the sensors available there are 2 main ways of communicating what the animals are experiencing
+The first being through visual sensing
+And the second being auditory sensing 
+
+For instance there are cameras and microphones, that work together great
+
+And we’re going to tell you about audio
