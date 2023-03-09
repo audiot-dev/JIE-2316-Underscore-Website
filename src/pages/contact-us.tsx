@@ -1,6 +1,8 @@
 import Head from "next/head";
+import Header from "../components/nav/Header";
+import ContactBox from "../components/contact/ContactBox"
 import { useAnalytics } from "../utils/analytics";
-import Header from "../components/nav/Header"
+
 
 export default function ContactUs() {
 
@@ -11,12 +13,8 @@ export default function ContactUs() {
             <Head>
                 <title>Contact Us</title>     
             </Head> 
-            <div>
-                <Header />
-                <div>
-                    Contact Us page
-                </div>
-            </div>
+            <Header />
+            <ContactBox />
         </>
     )
 }
