@@ -39,7 +39,7 @@ export default function SecondSection() {
                     </RedOrangeLargeIconButton>     
                 </Box>}
                 <NoSsr>
-                    <video src="/current-issues.mp4" controls ref={vidRef}
+                    <video src="/systemoverviewdraft2.mp4" controls ref={vidRef}
                     style={{width: '90%', height: 'auto'}} />
                 </NoSsr>
             </Box>
