@@ -1,0 +1,78 @@
+﻿Basic Outline:
+
+
+1. Installation
+2. Machine Learning in Audio
+   1. Audio -> noise detection(?) -> something else (?) -> something (?) -> product (?)
+3. Report results
+   1. Dashboard (desktop)
+   2. App (mobile)
+
+
+
+
+Notes from March 3rd meeting recording:
+16 mics
+capture activity birds and environment of barn in local activity
+zones in house
+
+
+aggregated in a hub
+data sent to cloud for secondary data processing
+
+
+Uses multi-class machine learning models to detect and count instances of anomalies
+detecting anomalies - the unexpected
+Trained on age groups of flock
+
+
+cloud activity allows for dashboard, more sophisticated analysis
+
+
+
+
+
+
+
+
+Title screen: “System Overview” with text animation
+
+
+Cuts to art/diagram of barn house. Shows chickens inside, as well as the placement of microphones.
+
+
+“Microphones are placed in regularly-spaced intervals within the chicken house to define zones”
+
+
+Graphic that shows eight or so microphones within the barn
+
+
+“Audio data is collected and monitored”
+
+
+“AudioT utilizes multi-class machine learning models to detect and count instances of ‘coughs’”[a]
+
+
+Animated chart graphic?
+
+
+
+
+  
+
+        Rough sketch of what i’m going to animate in after effects
+
+
+
+
+
+
+“Results and monitoring are accessible through AudioT’s desktop dashboard, or mobile app” 
+
+
+Footage of user going through dashboard and app
+
+
+
+
+[a]there's a 3 step process drawn in the meeting picture but i can't read any of the handwriting
