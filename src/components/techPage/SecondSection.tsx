@@ -23,9 +23,9 @@ export default function SecondSection() {
     }
 
     return (
-        <Box pt={0} pb={3} textAlign="center" sx={{ background:`linear-gradient(to bottom,#F2F5FA,#9e9e9e)`,backgroundPosition: 'center', backgroundRepeat: 'no-repeat',backgroundSize: 'cover',position: 'relative'}}>
-           <Box mt={20} >
-                <Typography variant={medScreen ? 'h3' : 'h2'} color="primary.main" >
+        <Box pt={0} pb={3} textAlign="center" sx={{ backgroundColor:"text.primary",backgroundPosition: 'center', backgroundRepeat: 'no-repeat',backgroundSize: 'cover',position: 'relative'}}>
+           <Box  pt={10}>
+                <Typography sx={{ letterSpacing: 1 }} variant={medScreen ? 'h3' : 'h2'} color="primary.main" >
                         System Overview
                     </Typography> 
             </Box>
@@ -43,104 +43,6 @@ export default function SecondSection() {
                     style={{width: '90%', height: 'auto'}} />
                 </NoSsr>
             </Box>
-            <Box my={15} >
-                <Typography   sx={{ fontWeight: 'bold' }} my={15} variant={medScreen ? 'h3' : 'h2'} color="secondary.main" textAlign="center">
-                    Components And Models
-                </Typography> 
-                <Grid container spacing={12} direction="row" >
-                    <Grid item md={4} xs={12}>
-                        <Box textAlign="center">
-                            
-
-                            <img 
-                                style={{aspectRatio: '11/9', width:'40%', height: 'auto'}}
-                                src="/babyChick.png" />
-                                <Typography mb={5}  sx={{ fontWeight: 'bold' }} variant={medScreen ? 'h4' : 'h3'} color="black" >
-                                        YOUNG
-                                </Typography> 
-                                <Typography  mx={smallScreen? 15:10}   variant={medScreen ? 'h4' : 'h3'} color="black">
-                                    -Distess
-                                </Typography> 
-                                <Typography  mx={smallScreen? 15:10}   variant={medScreen ? 'h4' : 'h3'} color="black" >
-                                        -Day
-                                </Typography> 
-                                <Typography  mx={smallScreen? 15:10}   variant={medScreen ? 'h4' : 'h3'} color="black">
-                                        -Night
-                                </Typography> 
-                                <Typography  mx={smallScreen? 15:10}   variant={medScreen ? 'h4' : 'h3'} color="black" >
-                                        -Water
-                                </Typography> 
-                                <Typography  mx={smallScreen? 15:10}   variant={medScreen ? 'h4' : 'h3'} color="black" >
-                                        -Anomaly
-                                </Typography> 
-
-                        </Box>
-                    </Grid>
-                    <Grid item md={4} xs={12}>
-                        <Box mt={smallScreen? 15:0} textAlign="center" >
-                            <img 
-                                style={{aspectRatio: '11/9', width:'40%', height: 'auto'}}
-                                src="/midChick.png" />
-                                <Typography mb={5}  sx={{ fontWeight: 'bold' }} variant={medScreen ? 'h4' : 'h3'} color="black"  >
-                                        MID
-                                </Typography> 
-                                <Typography  mx={smallScreen? 15:10}  variant={medScreen ? 'h4' : 'h3'} color="black" >
-                                    -Distess
-                                </Typography> 
-                                <Typography  mx={smallScreen? 15:10}   variant={medScreen ? 'h4' : 'h3'} color="black" >
-                                        -Day
-                                </Typography> 
-                                <Typography  mx={smallScreen? 15:10}   variant={medScreen ? 'h4' : 'h3'} color="black" >
-                                        -Night
-                                </Typography> 
-                                <Typography  mx={smallScreen? 15:10}   variant={medScreen ? 'h4' : 'h3'} color="black" >
-                                        -Water
-                                </Typography> 
-                                <Typography  mx={smallScreen? 15:10}   variant={medScreen ? 'h4' : 'h3'} color="black" >
-                                        -Anomaly
-                                </Typography> 
-
-                            </Box>
-
-                    </Grid>
-                    <Grid item md={4} xs={12}>
-                    <Box mt={smallScreen? 15:0} textAlign="center">
-                            <img 
-                                style={{aspectRatio: '11/9', width:'40%', height: 'auto'}}
-                                src="/bigChick.png" />
-                                <Typography mb={5} sx={{ fontWeight: 'bold' }} variant={medScreen ? 'h4' : 'h3'} color="black">
-                                        LATE
-                                </Typography> 
-                                <Typography  mx={smallScreen? 15:10}   variant={medScreen ? 'h4' : 'h3'} color="black" >
-                                    -Distess
-                                </Typography> 
-                                <Typography  mx={smallScreen? 15:10}   variant={medScreen ? 'h4' : 'h3'} color="black">
-                                        -Day
-                                </Typography> 
-                                <Typography  mx={smallScreen? 15:10}   variant={medScreen ? 'h4' : 'h3'} color="black">
-                                        -Night
-                                </Typography> 
-                                <Typography  mx={smallScreen? 15:10}   variant={medScreen ? 'h4' : 'h3'} color="black">
-                                        -Water
-                                </Typography> 
-                                <Typography  mx={smallScreen? 15:10}   variant={medScreen ? 'h4' : 'h3'} color="black" >
-                                        -Anomaly
-                                </Typography> 
-
-                            </Box>
-
-                    </Grid>
-
-    
-                    
-                 </Grid>
-                
-
-                  
-            </Box>
-
-            
-
 
         </Box>
     )
