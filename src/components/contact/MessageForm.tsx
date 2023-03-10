@@ -3,6 +3,8 @@ import { Grid, Box, FormGroup, useTheme, useMediaQuery } from "@mui/material";
 import { object, string } from "yup"
 import FormikTextField from "../formik/TextField"
 import { OrangePrimaryButton } from "../misc/buttons"
+import axios from "axios";
+import Router from "next/router"
 
 interface FormVals {
     first: string;
@@ -25,8 +27,18 @@ export default function ContactBox() {
     }
 
     const onSubmit = async (vals:FormVals, actions:FormikHelpers<FormVals>) => {
-        console.log(vals);
-        console.log(actions);
+        try {
+
+            await axios({
+                method: 'POST',
+                url: '/api/contact-us/submit',
+                data: {data: vals}
+            })
+
+            Router.push('/contact-us/success')
+        } catch (e) {
+            console.log(e)
+        }
     }
 
     return (
@@ -39,7 +51,7 @@ export default function ContactBox() {
             <Formik validationSchema={object({
                 first: string().required("Please enter your first name."),
                 last: string().required("Please enter your last name."),
-                email: string().required("Please enter your email."),
+                email: string().email("Please enter a valid email.").required("Please enter your email."),
                 message: string().required("Please enter a message.")
             })} initialValues={initialValues} 
             onSubmit={(values, actions) => onSubmit(values, actions)}>
