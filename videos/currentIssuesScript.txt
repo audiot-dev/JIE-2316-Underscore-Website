@@ -1,19 +1,19 @@
-Current Poultry Monitoring doesn’t tell the whole story
+0:00: Current Poultry Monitoring doesn’t tell the whole story
 
-Current methods of poultry monitoring only account for environmental factors
-Such as CO2 levels
-And temperature
-However it doesn't account for the poultry’s welfare outcome 
+0:05: Current methods of poultry monitoring only account for environmental factors
+0:08: Such as CO2 levels
+0:10: And temperature
+0:12: However it doesn't account for the poultry’s welfare outcome 
 
-Also it is common to utilize human auditors to check welfare outcomes editors
-But this method only gives a snapshot of the health of a few chickens 
-Out of many
-However the way to address this issue is through evidence based animal welfare
+0:18: Also it is common to utilize human auditors to check welfare outcomes editors
+0:22: But this method only gives a snapshot of the health of a few chickens 
+0:18: Out of many
+0:28: However the way to address this issue is through evidence based animal welfare
 
-Out of all the sensors available there are 2 main ways of communicating what the animals are experiencing
-The first being through visual sensing
-And the second being auditory sensing 
+0:32: Out of all the sensors available there are 2 main ways of communicating what the animals are experiencing
+0:38: The first being through visual sensing
+0:40: And the second being auditory sensing 
 
-For instance there are cameras and microphones, that work together great
+0:43: For instance there are cameras and microphones, that work together great
 
-And we’re going to tell you about audio
+0:47: And we’re going to tell you about audio
