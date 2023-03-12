@@ -1,0 +1,22 @@
+﻿The System Overview by AudioT
+
+
+For the installation of the product, 16 microphones are placed in regularly-spaced intervals within the chicken house to define the zones.
+
+
+These microphones help capture the activity of the chickens and barn environment in that zone.
+
+
+All of the data from the microphones is then aggregated at a central master controller. 
+
+
+This controller then stores the data locally and communicates it with the cloud for additional data processing. 
+
+
+For the audio processing of the product, AudioT utilizes multi-class machine learning models to detect and count instances of anomalies. 
+
+
+The models look at the developmental phase of the bird to be alert for certain diseases that are prevalent at certain ages, as well as track the trajectory of growth for the birds.
+
+
+All of these results and analysis of the monitoring are then accessible through AudioT’s desktop dashboard, or mobile app
