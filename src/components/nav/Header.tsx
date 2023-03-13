@@ -7,7 +7,7 @@ import { OrangePrimaryButton, RedOrangePrimaryButton, RedOrangePrimaryDenseButto
 
 export default function Header() {
 
-  const navbarHeight = '6vh';
+  const navbarHeight = '65px';
 
   return (
     
