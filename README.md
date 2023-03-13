@@ -1,6 +1,28 @@
 # AudioT Corporate Website
 This repository is for AudioT's website, where AudioT presents their innovation for monitoring animal welfare to the public. 
 
+## v0.3.0
+
+### Features
+The technology page was created based on the Figma previously designed.
+
+The contact us page was created based on the Figma previously designed.
+
+The sytem overview video for the technology page was created and added.
+
+### Bug Fixes
+Image on the mission page was sized down.
+
+### Known Issues
+The header does not collapse for smaller screen sizes.
+
+The mission page will be broken up into two separate mission pages, one targeting the contract grower and another targetting integrators and retailers. 
+
+Many of the images, videos, and audio clips on the landing page will need to be updated; some of the media will be sent to us in the coming weeks by our client and some of it we will continue working on developing.
+
+The contact us form does not collapse well on small screen sizes.
+
+
 ## v0.2.0
 
 ### Features
