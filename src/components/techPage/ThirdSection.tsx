@@ -29,8 +29,8 @@ export default function ThirdSection() {
         <Box py={3} textAlign="center" sx={{backgroundColor: "text.primary"}}>
             <Box mb={6} mt={5}>
                 <Typography variant={smallScreen ? 'h3' : 'h2'} color="primary.main">
-                Second Video
-            </Typography> 
+                Anomaly Detection
+                </Typography> 
             </Box>
 
             <Box maxWidth={1400} my={10}  mx="auto" position="relative">
@@ -42,7 +42,7 @@ export default function ThirdSection() {
                     </RedOrangeLargeIconButton>     
                 </Box>}
                 <NoSsr>
-                    <video src="/current-issues.mp4" controls ref={vidRef}
+                    <video src="/anomalies-vid.mp4" controls ref={vidRef}
                     style={{width: '70%', height: 'auto'}} />
                 </NoSsr>
             </Box>
