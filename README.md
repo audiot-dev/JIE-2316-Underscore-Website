@@ -6,7 +6,7 @@ This repository is for AudioT's website, where AudioT presents their innovation 
 
 ### Features
 
-The layout general layout for the about us page was implemented based on the Figma previously designed.
+The general layout for the about us page was implemented based on the Figma previously designed.
 
 The anomaly video for the technology page was created and added.
 
