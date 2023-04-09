@@ -11,10 +11,8 @@ export default function ContactBox() {
             py: 5,
             backgroundColor: 'secondary.main',
             textAlign: 'center',
-            maxWidth: 'sm',
-            minHeight: '75vh'
         }}>
-            <Typography py={2} sx={{ fontWeight: 'bold', letterSpacing: 1 }} variant={smallScreen ? 'h4' : 'h2'} color="primary.main">
+            <Typography py={2} sx={{ fontWeight: 'bold', letterSpacing: 1 }} variant={smallScreen ? 'h4' : 'h3'} color="primary.main">
                 CONTACT US
             </Typography>
             <Box sx={{ 

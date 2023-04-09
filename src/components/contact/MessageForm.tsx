@@ -43,10 +43,8 @@ export default function ContactBox() {
 
     return (
         <Box sx={{
-            p: 10,
             backgroundColor: '#FFFFFF',
             minWidth: 'lg',
-            mx: 'auto'
         }}>
             <Formik validationSchema={object({
                 first: string().required("Please enter your first name."),
@@ -57,34 +55,36 @@ export default function ContactBox() {
             onSubmit={(values, actions) => onSubmit(values, actions)}>
                 {({isSubmitting, isValidating}) => (
                     <Form>
-                        <Grid container rowSpacing={3} columnSpacing={{ xs: 2, sm: 4, md: 6 }} px={14} pt={5}>
-                            <Grid item xs={6}>
-                                <FormGroup>
-                                    <FormikTextField name="first" label="First Name" />
-                                </FormGroup>
+                        <Box>
+                            <Grid container px={3} pt={6}>
+                                <Grid item xs={12} sm={6} mb={3}>
+                                    <FormGroup>
+                                        <FormikTextField name="first" label="First Name" />
+                                    </FormGroup>
+                                </Grid>
+                                <Grid item xs={12} sm={6} mb={3}>
+                                    <FormGroup>
+                                        <FormikTextField name="last" label="Last Name" />
+                                    </FormGroup>
+                                </Grid>
+                                <Grid item xs={12} mb={3}>
+                                    <FormGroup>
+                                        <FormikTextField name="email" label="Email" />
+                                    </FormGroup>
+                                </Grid>
+                                <Grid item xs={12} mb={3}>
+                                    <FormGroup>
+                                        <FormikTextField name="message" label="Message"
+                                            multiline rows={6} />
+                                    </FormGroup>
+                                </Grid>
                             </Grid>
-                            <Grid item xs={6}>
-                                <FormGroup>
-                                    <FormikTextField name="last" label="Last Name" />
-                                </FormGroup>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <FormGroup>
-                                    <FormikTextField name="email" label="Email" />
-                                </FormGroup>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <FormGroup>
-                                    <FormikTextField name="message" label="Message"
-                                        multiline rows={6} />
-                                </FormGroup>
-                            </Grid>
-                        </Grid>
-                        <Box my={3} maxWidth={200} mx="auto" textAlign="center">
-                            <OrangePrimaryButton fullWidth type="submit" 
-                                disabled={isSubmitting || isValidating}>
-                                Send
-                            </OrangePrimaryButton>
+                            <Box my={3} maxWidth={200} mx="auto" textAlign="center">
+                                <OrangePrimaryButton fullWidth type="submit" 
+                                    disabled={isSubmitting || isValidating}>
+                                    Send
+                                </OrangePrimaryButton>
+                            </Box>
                         </Box>
                     </Form> 
                 )}
