@@ -7,8 +7,6 @@ import MessageForm from "./MessageForm"
 export default function ContactBox() {
 
     const theme = useTheme()
-    const smallScreen = useMediaQuery(theme.breakpoints.down('md'))
-    const medScreen = useMediaQuery(theme.breakpoints.down('lg'))
 
     return (
         <Box mt={3} mx={3}>
