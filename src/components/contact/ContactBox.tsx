@@ -6,8 +6,6 @@ import MessageForm from "./MessageForm"
 
 export default function ContactBox() {
 
-    const theme = useTheme()
-
     return (
         <Box mt={3} mx={3}>
             <Container maxWidth="lg">
