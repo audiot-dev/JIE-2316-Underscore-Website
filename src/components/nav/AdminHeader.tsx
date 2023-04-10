@@ -47,7 +47,7 @@ export default function AdminHeader() {
             <Drawer anchor="left" open={drawerIsOpen} onClose={() => setDrawerIsOpen(false)}
                 PaperProps={{sx: {top: 98}}} ModalProps={{sx: {top: 98}}} 
                 BackdropProps={{sx: {top: 98}}}>
-                <Box height="100%" bgcolor="secondaryBg.green" minWidth={250}>
+                <Box height="100%" bgcolor="secondaryBg.header" minWidth={250}>
                     {sections.map(section => (
                         <Box key={section.name} my={2} ml={3}>
                             <Typography variant="h5" color="text.primary">

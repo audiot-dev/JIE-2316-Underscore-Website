@@ -3,9 +3,10 @@ import {useTheme} from "@mui/material/styles"
 import Link from "next/link";
 
 export const sections = [
-    {name: "Dashboard", link: "/admin"},
-    {name: "News Feed", link: "/admin/news"},
-    {name: "Content", link: "/admin/content"}
+    // {name: "Dashboard", link: "/admin"},
+    // {name: "News Feed", link: "/admin/news"},
+    // {name: "Content", link: "/admin/content"}
+    {name: "Contact Messages", link: "/admin/contact-messages"}
 ]
 
 export default function AdminSidebar() {
@@ -18,16 +19,18 @@ export default function AdminSidebar() {
     }
 
     return (
-        <Box height="100%" bgcolor="secondaryBg.green" minWidth={250}>
+        <Box height="100%" bgcolor="secondaryBg.header" minWidth={250}>
             <Box py={2} pl={3} bgcolor="secondaryBg.header" textAlign="center">
                 <Grid container alignItems="start" direction="column">
                     <Grid item>
-                        <Typography variant="h4" color="text.secondary">
-                            AudioT
+                        <Typography variant="h4" color="text.primary">
+                            <Link href="/admin">
+                                AudioT
+                            </Link>
                         </Typography>
                     </Grid>
                     <Grid item>
-                        <Typography variant="body1" color="text.secondary">
+                        <Typography variant="body1" color="text.primary">
                             Admin Portal
                         </Typography>
                     </Grid>
@@ -36,7 +39,7 @@ export default function AdminSidebar() {
             <Box mt={3}>
                 {sections.map(section => (
                     <Box key={section.name} my={2} ml={3}>
-                        <Typography variant="h5" color="text.secondary">
+                        <Typography variant="h5" color="text.primary">
                             <Link href={section.link}>
                                 {section.name}
                             </Link>
@@ -44,7 +47,7 @@ export default function AdminSidebar() {
                     </Box>
                 ))}
                 <Box my={4} ml={3}>
-                    <Typography variant="h5" color="text.secondary"
+                    <Typography variant="h5" color="text.primary"
                         sx={{cursor: "pointer"}}>
                         Logout
                     </Typography>
