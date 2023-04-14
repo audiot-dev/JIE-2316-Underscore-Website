@@ -26,7 +26,7 @@ export default function Hardware() {
                         <Box>
                             <img 
                             style={{aspectRatio: '16/9', width: '100%', height: 'auto'}}
-                            src="/chicken-mic.jpeg" />
+                            src="/audiot-mics.png" />
                         </Box>
                     </Grid>
                 </Grid>
