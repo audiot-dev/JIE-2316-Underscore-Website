@@ -1,4 +1,5 @@
 import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
+import Link from "next/link";
 import { RedOrangePrimaryButton } from "../misc/buttons";
 
 export default function FirstBanner() {
@@ -24,9 +25,11 @@ export default function FirstBanner() {
                     </Typography>
                 </Box>
                 <Box mt={3} textAlign="center">
-                    <RedOrangePrimaryButton>
-                        Request More Information
-                    </RedOrangePrimaryButton>
+                    <Link href="/contact-us">
+                        <RedOrangePrimaryButton>
+                            Request More Information
+                        </RedOrangePrimaryButton>
+                    </Link>
                 </Box>
             </Box>
         </Box>

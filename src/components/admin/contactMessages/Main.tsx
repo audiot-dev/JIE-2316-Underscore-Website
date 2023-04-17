@@ -1,10 +1,11 @@
-import { Box, Typography, Grid, Paper } from "@mui/material";
+import { Box, Typography, Grid, Paper, IconButton } from "@mui/material";
 import axios from "axios";
 import dayjs from "dayjs";
 import { useMemo, useState } from "react";
 import { C_ContactMessage } from "../../../database/interfaces/ContactMessage";
 import { INITIAL_RECENT_CONTACT_MSG_COUNT } from "../../../database/operations/contactMessage";
 import { OrangePrimaryButton } from "../../misc/buttons";
+import DeleteIcon from '@mui/icons-material/Delete';
 
 interface Props {
     contactMessages: C_ContactMessage[];
@@ -46,6 +47,34 @@ export default function Main({contactMessages:dbContactMessages}:Props) {
         setLoading(false)
     }
 
+    const deleteMessage = async (index:number) => {
+        setLoading(true)
+
+        try {
+
+            const msg = contactMessages[index]
+
+            if (!window.confirm(`Are you sure you want to delete the message from ${msg.data.first} ${msg.data.last}?`)) {
+                setLoading(false)
+                return
+            }
+
+            await axios({
+                method: 'POST',
+                url: '/api/admin/delete-contact-message',
+                data: {id: msg.ref['@ref'].id}
+            })
+
+            const copy = [...contactMessages]
+            copy.splice(index, 1)
+            setContactMessages(copy)
+
+        } catch (e) {
+            console.log(e)
+        }
+        setLoading(false)
+    }
+
     return (
         <Box ml={3}>
             <Grid container height="98px" alignItems="center" >
@@ -59,7 +88,12 @@ export default function Main({contactMessages:dbContactMessages}:Props) {
                 {contactMessages.map((msg, i) => (
                     <Box maxWidth="sm" mb={6} key={i}>
                         <Paper elevation={3}>
-                            <Box p={3}>
+                            <Box p={3} position="relative">
+                                <Box position="absolute" right={4} top={4}>
+                                    <IconButton disabled={loading} onClick={() => deleteMessage(i)}>
+                                        <DeleteIcon color="error" />
+                                    </IconButton>
+                                </Box>
                                 <Box>
                                     <Typography variant="h6">
                                         {msg.data.first} {msg.data.last}

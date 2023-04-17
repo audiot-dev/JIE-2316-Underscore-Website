@@ -3,6 +3,8 @@ import { parseCookies } from "nookies";
 import { C_AdminData } from "../database/interfaces/Admin";
 import jwt from "jsonwebtoken"
 import { getAdminFromUsername } from "../database/operations/admin";
+import axios from "axios";
+import Router from 'next/router'
 
 function getDecoded(auth:string) {
     return new Promise<C_AdminData|null>((resolve, reject) => {
@@ -87,5 +89,17 @@ export async function getAdmin(ctx:GetServerSidePropsContext) {
             props: {},
             redirect: {destination: "/admin/login"}
         }}
+    }
+}
+
+export async function logout() {
+
+    try {
+        await axios.get('/api/admin/logout') 
+        Router.push({
+            pathname: '/admin/login'
+        })
+    } catch (e) {
+        console.log(e)
     }
 }

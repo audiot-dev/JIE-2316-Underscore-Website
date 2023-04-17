@@ -16,12 +16,12 @@ export default function ContactBox() {
                 CONTACT US
             </Typography>
             <Box sx={{ 
-                backgroundImage: 'url(/vector_chicken.svg)',
+                backgroundImage: 'url(/audiot-logo-white.svg)',
                 height: 300,
                 width: 260,
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
-                backgroundSize: 'cover',
+                backgroundSize: 'contain',
                 position: 'relative',
                 margin: 'auto'}}>
             </Box>

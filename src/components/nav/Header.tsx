@@ -63,11 +63,11 @@ export default function Header() {
                         </Grid>
 
                         <Grid item mx={3} my={1}>
-                            <Link href="/contact-us">
-                            <RedOrangePrimaryDenseButton>
-                                Contact Us
-                            </RedOrangePrimaryDenseButton>
-                            </Link>
+                            <Box  sx={{ width:'50', height:'3', p: 2 }} borderRadius={3}>
+                            <Typography variant="body1" color="text.primary">
+                                <Link href="/contact-us">Contact Us</Link>
+                            </Typography>
+                            </Box>
                         </Grid>
                     </> : <Grid item>
                         <IconButton onClick={() => setOpenDrawer(true)}>

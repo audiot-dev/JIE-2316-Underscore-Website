@@ -5,6 +5,7 @@ import MenuIcon from "@mui/icons-material/Menu"
 import { useState } from "react";
 import { sections } from "./AdminSidebar"
 import Link from "next/link";
+import { logout } from "../../utils/admin-auth";
 
 export default function AdminHeader() {
 
@@ -59,7 +60,7 @@ export default function AdminHeader() {
                     ))}
                     <Box my={4} ml={3}>
                         <Typography variant="h5" color="text.primary"
-                            sx={{cursor: "pointer"}}>
+                            sx={{cursor: "pointer"}} onClick={() => logout()}>
                             Logout
                         </Typography>
                     </Box>

@@ -4,6 +4,13 @@ import { ContactMessageData, S_ContactMessage } from "../interfaces/ContactMessa
 
 export const INITIAL_RECENT_CONTACT_MSG_COUNT = 10
 
+export async function deleteContactMessage(id:string) {
+
+    await client.query(
+        q.Delete(q.Ref(q.Collection('contactMessages'), id))
+    )
+}
+
 export async function addContactMessage(data:ContactMessageData) {
 
     let copy:any = {...data}

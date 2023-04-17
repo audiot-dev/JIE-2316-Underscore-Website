@@ -1,6 +1,7 @@
 import { Box, Grid, Typography, useMediaQuery } from "@mui/material";
 import {useTheme} from "@mui/material/styles"
 import Link from "next/link";
+import { logout } from "../../utils/admin-auth";
 
 export const sections = [
     // {name: "Dashboard", link: "/admin"},
@@ -48,7 +49,7 @@ export default function AdminSidebar() {
                 ))}
                 <Box my={4} ml={3}>
                     <Typography variant="h5" color="text.primary"
-                        sx={{cursor: "pointer"}}>
+                        sx={{cursor: "pointer"}} onClick={() => logout()}>
                         Logout
                     </Typography>
                 </Box>
