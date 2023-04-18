@@ -1,0 +1,17 @@
+@startuml View Contact Messages
+
+-> User: do()
+
+User -> Frontend: loadContactMessagePage()
+
+Frontend -> Backend: getContactMessagePage()
+
+Backend -> Database: getRecentContactMessages()
+
+Database -> Backend: contactMessages
+
+Backend -> Frontend: populatedPage
+
+Frontend -> User: populatedPage
+
+@enduml

@@ -1,0 +1,44 @@
+@startuml Contact Form Submission
+
+-> User: do()
+
+User -> Frontend: submitForm()
+
+alt is_form_errors
+
+Frontend -> User: errors
+
+else
+
+Frontend -> Backend: submitForm()
+
+    alt is_form_errors
+
+    Backend -> Frontend: errors
+    Frontend -> User: errors
+
+    else
+
+    Backend -> Database: createEntry()
+
+        alt is_db_error
+
+        Database -> Backend: errors
+        Backend -> Frontend: errors
+        Frontend -> User: errors
+
+        else
+
+        Database -> Backend: success
+        Backend -> Frontend: success
+        Frontend -> Backend: redirectToSuccessPage()
+        Backend -> Frontend: successPage
+        Frontend -> User: successPage
+
+        end
+
+    end
+
+end
+
+@enduml
