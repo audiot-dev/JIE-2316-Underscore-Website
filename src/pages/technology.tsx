@@ -3,6 +3,7 @@ import Head from "next/head";
 import { useAnalytics } from "../utils/analytics";
 import Header from "../components/nav/Header";
 import Composite from "../components/techPage/Composite";
+import Footer from "../components/nav/Footer";
 
 export default function Technology() {
 
@@ -13,10 +14,11 @@ export default function Technology() {
             <Head>
                 <title>Technology</title>     
             </Head> 
-            <div>
-                <Header />
-                <Composite />
-            </div>
+			<div className="header-footer-root">
+				<Header />
+				<Composite />
+				<Footer />
+			</div>
         </>
     )
 }

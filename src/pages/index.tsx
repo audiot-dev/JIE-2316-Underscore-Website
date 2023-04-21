@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useAnalytics } from "../utils/analytics";
 import Header from "../components/nav/Header"
 import Main from "../components/home/Main"
+import Footer from "../components/nav/Footer";
 
 export default function Home() {
 
@@ -12,9 +13,10 @@ export default function Home() {
 			<Head>
 				<title>AudioT</title>		
 			</Head>
-			<div>
+			<div className="header-footer-root">
 				<Header />
 				<Main />
+				<Footer />
 			</div>
 		</>
 	)

@@ -24,3 +24,17 @@ a {
     background: black;
   }
 }
+
+.sk-linkedin-page-post-profile-info {
+  width: 100% !important;
+}
+
+.grid-item-linkedin-page-post {
+  width: 100% !important;
+}
+
+.header-footer-root {
+  display: grid;
+  min-height: 100vh;
+  grid-template: auto 1fr auto / 1fr;
+}
