@@ -38,7 +38,7 @@ export default function BirdDev() {
                 bgcolor="primary.main" height="100%" />
                 <Box mt={12}>
                     <BirdDevUnit name="Chick" birdImg="/small-chicken.png" 
-                        videoLink="https://www.youtube.com/embed/70IqKloH-mw" 
+                        videoLink="/early-stage-clip.mp4" 
                         audios={Array(3).fill({
                             img: '/dummy-spectogram.png',
                             audio: '/chicken-alarm.mp3',
@@ -47,7 +47,7 @@ export default function BirdDev() {
                 </Box>
                 <Box mt={12}>
                     <BirdDevUnit name="Growing Chicken" birdImg="/medium-chicken.png" 
-                        videoLink="https://www.youtube.com/embed/70IqKloH-mw" 
+                        videoLink="/mid-stage-clip.mp4" 
                         audios={Array(3).fill({
                             img: '/dummy-spectogram.png',
                             audio: '/chicken-alarm.mp3',
@@ -56,7 +56,7 @@ export default function BirdDev() {
                 </Box>
                 <Box mt={12}>
                     <BirdDevUnit name="Adult Chicken" birdImg="/large-chicken.png" 
-                        videoLink="https://www.youtube.com/embed/70IqKloH-mw" 
+                        videoLink="/late-stage-clip.mp4"
                         audios={Array(3).fill({
                             img: '/dummy-spectogram.png',
                             audio: '/chicken-alarm.mp3',

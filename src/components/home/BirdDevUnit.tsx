@@ -1,7 +1,8 @@
-import { Box, Grid, Paper, Typography, useRadioGroup } from "@mui/material";
+import { Box, Grid, NoSsr, Paper, Typography, useRadioGroup } from "@mui/material";
 import { useRef, useState } from "react";
-import { RedOrangePrimaryDenseButton } from "../misc/buttons";
+import { RedOrangeLargeIconButton, RedOrangePrimaryDenseButton } from "../misc/buttons";
 import MicIcon from '@mui/icons-material/Mic';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 interface Props {
     name: string;
@@ -77,6 +78,17 @@ function SpectogramPlayer({img, audio, name}:SpectogramPlayerProps) {
 
 export default function BirdDevUnit({name, birdImg, videoLink, 
     audios}:Props) {
+
+    const vidRef = useRef<HTMLVideoElement>(null)
+
+    const [showPlayBtn, setShowPlayBtn] = useState(true)
+
+    const onVidClick = () => {
+        if (vidRef.current?.paused) {
+            vidRef.current?.play()
+            setShowPlayBtn(false)
+        }
+    }
     
     return (
         <Box position="relative">
@@ -99,9 +111,16 @@ export default function BirdDevUnit({name, birdImg, videoLink,
                 </Grid>
                 <Grid item xs={10}>
                     <Box>
-                        <Box maxWidth={1045}>
-                            <iframe src={videoLink} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen
-                            style={{aspectRatio: '16/9', width: '100%', height: 'auto'}}></iframe>
+                        <Box maxWidth={1045} position="relative">
+                            {showPlayBtn && <Box position="absolute" left="50%" top="50%" 
+                            zIndex={1} onClick={() => onVidClick()}
+                            sx={{transform: 'translate(-50%,-50%)', cursor: 'pointer'}}>
+                                <RedOrangeLargeIconButton>
+                                    <PlayArrowIcon sx={{fontSize: 70}} />
+                                </RedOrangeLargeIconButton>     
+                            </Box>}
+                            <video src={videoLink} controls ref={vidRef}
+                            style={{width: '100%', height: 'auto'}} />
                         </Box>
                     </Box>
                     <Box mt={3} pb={3}
