@@ -139,9 +139,9 @@ export default function Advantages() {
                             <Box>
                                 <img src={optionSelected === 0 ? 
                                     "/chicken-anomalies.png" : optionSelected === 1 ?
-                                    "/chicken-zones.png" : "/chicken-tracking-outcomes.png"}
+                                    "/chicken-zones.png" : "/triple-chickens2.png"}
                                     style={{aspectRatio: optionSelected === 0 ? '1/1' : 
-                                        optionSelected === 1 ? '3/2' : '3/1', 
+                                        optionSelected === 1 ? '3/2' : '3/2.3', 
                                         width: '100%', height: 'auto'}} />
                             </Box>
                         </Grid>

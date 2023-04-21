@@ -27,7 +27,7 @@ export default function BirdDev() {
                     </Grid>
                     <Grid item md={6} xs={12}>
                         <Box>
-                            <img src="/chicken-dev.png"
+                            <img src="/chicken-dev5.png"
                             style={{aspectRatio: '16/4', width: '100%', height: 'auto'}} />
                         </Box>
                     </Grid>
@@ -37,7 +37,7 @@ export default function BirdDev() {
                 <Box position="absolute" left={-30} width={5} 
                 bgcolor="primary.main" height="100%" />
                 <Box mt={12}>
-                    <BirdDevUnit name="Chick" birdImg="/small-chicken.png" 
+                    <BirdDevUnit name="Chick" birdImg="/chicken-dev-chick.png" 
                         videoLink="/early-stage-clip.mp4" 
                         audios={Array(3).fill({
                             img: '/dummy-spectogram.png',
@@ -46,7 +46,7 @@ export default function BirdDev() {
                         })} />
                 </Box>
                 <Box mt={12}>
-                    <BirdDevUnit name="Growing Chicken" birdImg="/medium-chicken.png" 
+                    <BirdDevUnit name="Growing Chicken" birdImg="/chicken-dev-growing.png" 
                         videoLink="/mid-stage-clip.mp4" 
                         audios={Array(3).fill({
                             img: '/dummy-spectogram.png',
@@ -55,7 +55,7 @@ export default function BirdDev() {
                         })} />
                 </Box>
                 <Box mt={12}>
-                    <BirdDevUnit name="Adult Chicken" birdImg="/large-chicken.png" 
+                    <BirdDevUnit name="Adult Chicken" birdImg="/chicken-dev-adult.png" 
                         videoLink="/late-stage-clip.mp4"
                         audios={Array(3).fill({
                             img: '/dummy-spectogram.png',
