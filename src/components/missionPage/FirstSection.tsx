@@ -7,7 +7,7 @@ export default function FirstSection() {
     const medScreen = useMediaQuery(theme.breakpoints.down('lg'))
 
     return (
-        <Box sx={{ backgroundImage: 'url(/broiler-chickens.jpg)',height: 800,backgroundPosition: 'center', backgroundRepeat: 'no-repeat',backgroundSize: 'cover',position: 'relative'}}>
+        <Box sx={{ backgroundImage: 'url(/farmer-in-broiler2.jpg)',height: 800,backgroundPosition: 'center', backgroundRepeat: 'no-repeat',backgroundSize: 'cover',position: 'relative'}}>
              <Box textAlign="left" bgcolor="rgba(255,255,255,.80)" px={10} py={smallScreen? 10:5} mt={smallScreen? "410px": medScreen? "530px":"510px"} position="absolute" width="100%" >
                 <Typography py={0} sx={{ fontWeight: 'bold', letterSpacing: 1 }} variant={smallScreen ? 'h3' : 'h1'} color="secondary.main">
                     Our Mission
