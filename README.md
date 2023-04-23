@@ -2,6 +2,13 @@
 
 This repository is for AudioT's website, where AudioT presents their innovation for monitoring animal welfare to the public.
 
+Version History:
+
+* [v0.4.0](#v040)
+* [v0.3.0](#v030)
+* [v0.2.0](#v020)
+* [v0.1.0](#v010)
+
 ## v0.4.0
 
 ### Features
