@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import { RedOrangeLargeIconButton, RedOrangePrimaryDenseButton } from "../misc/buttons";
 import MicIcon from '@mui/icons-material/Mic';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import Video from "../misc/Video";
 
 interface Props {
     name: string;
@@ -79,17 +80,6 @@ function SpectogramPlayer({img, audio, name}:SpectogramPlayerProps) {
 export default function BirdDevUnit({name, birdImg, videoLink, 
     audios}:Props) {
 
-    const vidRef = useRef<HTMLVideoElement>(null)
-
-    const [showPlayBtn, setShowPlayBtn] = useState(true)
-
-    const onVidClick = () => {
-        if (vidRef.current?.paused) {
-            vidRef.current?.play()
-            setShowPlayBtn(false)
-        }
-    }
-    
     return (
         <Box position="relative">
             <Box mb={2} ml={6} position="relative">
@@ -112,19 +102,11 @@ export default function BirdDevUnit({name, birdImg, videoLink,
                 <Grid item xs={10}>
                     <Box>
                         <Box maxWidth={1045} position="relative">
-                            {showPlayBtn && <Box position="absolute" left="50%" top="50%" 
-                            zIndex={1} onClick={() => onVidClick()}
-                            sx={{transform: 'translate(-50%,-50%)', cursor: 'pointer'}}>
-                                <RedOrangeLargeIconButton>
-                                    <PlayArrowIcon sx={{fontSize: 70}} />
-                                </RedOrangeLargeIconButton>     
-                            </Box>}
-                            <video src={videoLink} controls ref={vidRef}
-                            style={{width: '100%', height: 'auto'}} />
+                            <Video src={videoLink} />
                         </Box>
                     </Box>
                     <Box mt={3} pb={3}
-                        sx={{overflowX: 'auto', scrollSnapType: 'x mandatory'}}>
+                        sx={{overflowX: 'auto', scrollSnapType: 'x mandatory', maxWidth: '100vw'}}>
                         <Grid container spacing={3} wrap="nowrap">
                             {audios.map((audio, i) => (
                                 <Grid item key={i} sx={{scrollSnapAlign: 'start'}}>
