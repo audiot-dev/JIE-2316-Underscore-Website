@@ -14,6 +14,6 @@
 0:38: The first being through visual sensing
 0:40: And the second being auditory sensing 
 
-0:43: For instance there are cameras and microphones, that work together great
+0:43: For instance there are cameras and microphones that work together great
 
 0:47: And we’re going to tell you about audio
