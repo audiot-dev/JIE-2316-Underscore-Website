@@ -27,7 +27,7 @@ export default function BirdDev() {
                     </Grid>
                     <Grid item md={6} xs={12}>
                         <Box>
-                            <img src="/chicken-dev5.png"
+                            <img src="/chicken-dev-w-text.png"
                             style={{aspectRatio: '16/4', width: '100%', height: 'auto'}} />
                         </Box>
                     </Grid>
@@ -39,29 +39,53 @@ export default function BirdDev() {
                 <Box mt={12}>
                     <BirdDevUnit name="Chick" birdImg="/chicken-dev-chick.png" 
                         videoLink="/early-stage-clip.mp4" 
-                        audios={Array(3).fill({
-                            img: '/dummy-spectogram.png',
-                            audio: '/chicken-alarm.mp3',
-                            name: 'Test'
-                        })} />
+                        audios={[{
+                            img: '/waveforms/early/distress.png',
+                            audio: '/waveforms/early/distress.wav',
+                            name: 'Distress'
+                        }, {
+                            img: '/waveforms/early/peep.png',
+                            audio: '/waveforms/early/early peep.wav',
+                            name: 'Peep'
+                        }, {
+                            img: '/waveforms/early/trill.png',
+                            audio: '/waveforms/early/early_trill.wav',
+                            name: 'Trill'
+                        }]} />
                 </Box>
                 <Box mt={12}>
                     <BirdDevUnit name="Growing Chicken" birdImg="/chicken-dev-growing.png" 
                         videoLink="/mid-stage-clip.mp4" 
-                        audios={Array(3).fill({
-                            img: '/dummy-spectogram.png',
-                            audio: '/chicken-alarm.mp3',
-                            name: 'Test'
-                        })} />
+                        audios={[{
+                            img: '/waveforms/mid/alert mid.png',
+                            audio: '/waveforms/mid/alert mid.wav',
+                            name: 'Alert'
+                        }, {
+                            img: '/waveforms/mid/chirping mid.png',
+                            audio: '/waveforms/mid/chirps mid.wav',
+                            name: 'Chirping'
+                        }, {
+                            img: '/waveforms/mid/multitone mid.png',
+                            audio: '/waveforms/mid/multitone.wav',
+                            name: 'Multitone'
+                        }]} />
                 </Box>
                 <Box mt={12}>
                     <BirdDevUnit name="Adult Chicken" birdImg="/chicken-dev-adult.png" 
                         videoLink="/late-stage-clip.mp4"
-                        audios={Array(3).fill({
-                            img: '/dummy-spectogram.png',
-                            audio: '/chicken-alarm.mp3',
-                            name: 'Test'
-                        })} />
+                        audios={[{
+                            img: '/waveforms/late/chirps late.png',
+                            audio: '/waveforms/late/chirp late.wav',
+                            name: 'Chirping'
+                        }, {
+                            img: '/waveforms/late/Disease late.png',
+                            audio: '/waveforms/late/disease late.wav',
+                            name: 'Disease'
+                        }, {
+                            img: '/waveforms/late/squawk late.png',
+                            audio: '/waveforms/late/late squak-trimmed.wav',
+                            name: 'Squawk'
+                        }]} />
                 </Box>
             </Box>
         </Box>
