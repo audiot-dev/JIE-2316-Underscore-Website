@@ -27,7 +27,7 @@ export default function BirdDev() {
                     </Grid>
                     <Grid item md={6} xs={12}>
                         <Box>
-                            <img src="/chicken-dev5.png"
+                            <img src="/chicken-dev-w-text.png"
                             style={{aspectRatio: '16/4', width: '100%', height: 'auto'}} />
                         </Box>
                     </Grid>
