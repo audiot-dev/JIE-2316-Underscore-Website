@@ -20,8 +20,7 @@ export default function FirstBanner() {
                 position="absolute" width="100%">
                 <Box textAlign="center" maxWidth={1400} mx="auto">
                     <Typography variant={smallScreen ? 'h5' : 'h3'} color="secondary.main">
-                        Audio-based welfare monitoring systems will revolutionize
-                        the poultry industry.
+                        Audio-based continuous monitoring solutions will improve broiler performance and welfare
                     </Typography>
                 </Box>
                 <Box mt={3} textAlign="center">
