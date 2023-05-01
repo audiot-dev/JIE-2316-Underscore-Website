@@ -15,7 +15,7 @@ export default function ThirdSection() {
                 </Typography> 
             </Box>
 
-            <Box maxWidth={1400} my={10}  position="relative">
+            <Box maxWidth={1400} my={10} mx="auto"  position="relative">
                 <Video src="/anomalies-vid.mp4" />
             </Box>
            
