@@ -58,9 +58,9 @@ function SpectogramPlayer({img, audio, name}:SpectogramPlayerProps) {
                             {name}
                         </Typography>
                     </Box>
-                    <Box width={200} height={400} mx="auto" overflow="hidden"
+                    <Box width={200} height={300} mx="auto" overflow="hidden"
                         borderRadius={2} position="relative">
-                        <img src={img} style={{width: '100%', height: 'auto'}} />
+                        <img src={img} style={{width: '100%', height: '100%'}} />
                         <Box position="absolute" height="100%" width={2} 
                             bgcolor="#F04B4C" top={0} left={audioLineX} />
                     </Box>
